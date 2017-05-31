@@ -17,6 +17,12 @@ EDXAPP_LMS_BASE: "{{ EDXAPP_SITE_NAME }}"
 EDXAPP_CMS_BASE: "{{ EDXAPP_SITE_NAME }}:18010"
 EDXAPP_PREVIEW_LMS_BASE: "{{ EDXAPP_LMS_BASE }}"
 
+EDXAPP_MONGO_HOSTS: 'cltcosmosdb.documents.azure.com'
+EDXAPP_MONGO_PASSWORD: '2F6w1tinJTFiyFubO2ObMVUfbUbvfWeDDSZGAfP04ymRHdGbZ9bGvrMuCLt2MhjmltXwLbmaV6BxZ8ctJSwpJg=='
+EDXAPP_MONGO_PORT: 10255
+EDXAPP_MONGO_USER: 'cltcosmosdb'
+EDXAPP_MONGO_DB_NAME: 'edxapp'
+
 # Configure third-party auth
 # see: http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/configuration/tpa/
 # see: https://github.com/MSOpenTech/edx-documentation/blob/master/en_us/install_operations/source/configuration/enable_sso.rst
