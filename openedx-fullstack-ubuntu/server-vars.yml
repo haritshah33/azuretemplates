@@ -17,12 +17,23 @@ EDXAPP_LMS_BASE: "{{ EDXAPP_SITE_NAME }}"
 EDXAPP_CMS_BASE: "{{ EDXAPP_SITE_NAME }}:18010"
 EDXAPP_PREVIEW_LMS_BASE: "{{ EDXAPP_LMS_BASE }}"
 
-EDXAPP_MONGO_HOSTS: 'cltcosmosedxdb.documents.azure.com'
-EDXAPP_MONGO_PASSWORD: 'OHmzLCrpaF1ftj0UgiwqLeMF83y6FUlGzaNdEP3AuNZMweiNML7BKf3Iy2b86DbabLvlYjxKaC4TYzvNuRBlnA=='
-EDXAPP_MONGO_PORT: 10255
-EDXAPP_MONGO_USER: 'cltcosmosedxdb'
-EDXAPP_MONGO_DB_NAME: 'edxapp'
-EDXAPP_MONGO_USE_SSL: true
+# EDXAPP_MONGO_HOSTS: 'cltcosmosedxdb.documents.azure.com'
+# EDXAPP_MONGO_PASSWORD: 'OHmzLCrpaF1ftj0UgiwqLeMF83y6FUlGzaNdEP3AuNZMweiNML7BKf3Iy2b86DbabLvlYjxKaC4TYzvNuRBlnA=='
+# EDXAPP_MONGO_PORT: 10255
+# EDXAPP_MONGO_USER: 'cltcosmosedxdb'
+# EDXAPP_MONGO_DB_NAME: 'edxapp'
+# EDXAPP_MONGO_USE_SSL: true
+
+EDXAPP_MYSQL_DB_NAME: 'edxapp'
+EDXAPP_MYSQL_USER: 'cltadmin@cltmysqlvm'
+EDXAPP_MYSQL_USER_ADMIN: 'cltadmin@cltmysqlvm'
+EDXAPP_MYSQL_PASSWORD: 'Harshalshah123'
+EDXAPP_MYSQL_PASSWORD_READ_ONLY: 'Harshalshah123'
+EDXAPP_MYSQL_PASSWORD_ADMIN: 'Harshalshah123'
+
+
+EDXAPP_MYSQL_HOST: 'cltmysqlvm.mysql.database.azure.com'
+EDXAPP_MYSQL_PORT: '3306'
 
 # Configure third-party auth
 # see: http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/configuration/tpa/
